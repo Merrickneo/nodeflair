@@ -22,9 +22,12 @@ export default function DescriptionPanel({ selectedJob, onJobCardClick }) {
     return (
         <div className="description-panel scrollable-panel">
             {selectedJob ? (
-                <JobDescription jobDetails={selectedJob} />
+                <>
+                    <p style={{fontWeight:"bold", fontSize: "40px"}}><u>Job Description</u></p>
+                    <JobDescription jobDetails={selectedJob} />
+                </>
             ) : (
-                <p>Click on a job card to see the description</p>
+                <p style={{fontWeight:"bold", fontSize: "40px"}}>Click on a job card to see the description</p>
             )}
 
 
