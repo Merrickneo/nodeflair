@@ -1,0 +1,7 @@
+.description-panel {
+    flex: 1; /* Take up 60% of the width */
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
