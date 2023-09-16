@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="main-content">
         <JobPostings cardClick={handleJobCardClick}/>
-        <JobDescriptionPanel selectedJob= {selectedJob}/>
+        <JobDescriptionPanel className="jobDescriptionPanel" selectedJob= {selectedJob}/>
     </div>
   );
 }

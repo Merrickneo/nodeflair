@@ -6,68 +6,94 @@
     border: 5px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out; /* Add hover effect */
+    transition: transform 0.2s ease-in-out;
+    /* Add hover effect */
     margin: 20px;
-  }
-  
-  .job-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .job-logo {
-    flex: 0 0 auto;
-    margin-right: 20px;
-  }
-  
-  .job-logo img {
-    max-width: 80px;
-    max-height: 80px;
-  }
-  
-  .job-details {
+    cursor: pointer;
+}
+
+.job-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .company-title h3 {
+    max-width: 100%;
+    /* Ensure job details don't exceed the card's width */
+    overflow-x: auto;
+    /* Add horizontal scrolling when needed */
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-logo {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.job-logo img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.job-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-rating h3 {
     font-size: 18px;
     margin: 0;
-  }
-  
-  .posting-location {
-    display: flex;
-    align-items: center; /* Center content vertically */
-  }
+    display: inline-flex;
+    flex-direction: row;
 
-  .location {
+}
+
+.rating-role {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.posting-location {
     display: flex;
     align-items: center;
-  }
+    /* Center content vertically */
+}
 
-  .location img {    
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location img {
     height: 5px;
     width: 5px;
     margin-right: 5px;
-  }
-  
-  
-  .skills {
+}
+
+
+.skills {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .skill-tag {
+}
+
+.skill-tag {
     background-color: #ddd;
     color: #333;
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
-  }
+}
 
-  .posting-text {
+.posting-text {
     color: #1dc769;
-    
-  }
-  
+
+}

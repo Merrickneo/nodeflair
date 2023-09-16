@@ -1,8 +1,8 @@
   .job-postings {
-      width: 40%;
       overflow-y: auto;
       /* Enable vertical scrolling if needed */
       padding: 20px;
       margin: 10px;
+      max-width: 100%;
       border-radius: 5px;
   }
