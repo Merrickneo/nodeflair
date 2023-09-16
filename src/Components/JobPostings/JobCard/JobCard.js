@@ -2,9 +2,12 @@ import React from 'react';
 import "./JobCard.css";
 import location from "./location.jpeg";
 
-export default function JobCard({ jobDetails }) {
+export default function JobCard({ jobDetails, cardClicked }) {
+    const selectJob = () => {
+        cardClicked(jobDetails);
+    }
     return (
-        <div className="job-card">
+        <div className="job-card" onClick={selectJob}>
             <div className="job-logo">
                 <img src={`/${jobDetails.Image}`} alt={`${jobDetails.title} Logo`} />
             </div>

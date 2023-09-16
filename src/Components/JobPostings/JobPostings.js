@@ -3,7 +3,7 @@ import React from 'react';
 import "./JobPostings.css";
 import JobCard from './JobCard/JobCard';
 
-const JobPostings = () => {
+const JobPostings = ({cardClick}) => {
     const jobList = [
         {
             Company: "Govtech",
@@ -40,7 +40,8 @@ const JobPostings = () => {
                          job-postings">
           <div>
             {jobList.map((job) => (
-              <JobCard jobDetails={job}/>
+              <JobCard jobDetails={job}
+              cardClicked={cardClick}/>
             ))}
           </div>
         </div>
