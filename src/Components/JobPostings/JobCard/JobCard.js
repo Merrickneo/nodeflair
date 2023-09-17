@@ -10,10 +10,10 @@ export default function JobCard({ jobDetails, cardClicked }) {
     }
     return (
         <div className="job-card" onClick={selectJob}>
+            <div className="job-logo">
+                <img src={`/${jobDetails.Image}`} alt={`${jobDetails.title} Logo`} />
+            </div>
             <div className="job-content">
-                <div className="job-logo">
-                    <img src={`/${jobDetails.Image}`} alt={`${jobDetails.title} Logo`} />
-                </div>
                 <div className="job-details">
                     <div className="title-rating">
                         <div>
